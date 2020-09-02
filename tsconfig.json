@@ -1,25 +1,25 @@
 {
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "removeComments": true,
-        "target": "es5",
-        "noEmit": true,
-    },
-    "include": [
-        "src/*"
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
-    "exclude": [
-        "build/*",
-        "node_modules/*"
-    ],
-    "awesomeTypescriptLoaderOptions": {
-        "useBabel": true,
-        "babelOptions": {
-            "babelrc": false, 
-            "presets": [
-                ["@babel/preset-env", { "targets": "last 2 versions, ie 11", "modules": false }]
-            ]
-        },
-        "babelCore": "@babel/core", 
-    }
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ]
 }
